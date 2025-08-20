@@ -10,14 +10,29 @@
         }
          table{
             width: 500px;
+            border-collapse: collapse;
          }
          td, th{
             border: 1px solid black;
             padding: 10px;
          }
-         thead {
-            background-color: dimgrey;
+         caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgba(105, 105, 105, 0.459);
+
+         }
+         thead, tfoot{
+            background-color: rgb(105, 105, 105);
             color: white;
+         }
+         tbody > tr:nth-child(2n){
+            background-color:rgba(131, 129, 129, 0.486);
+
+         }
+         td.nume {
+            text-align: right;
          }
     </style>
 </head>
@@ -34,18 +49,75 @@
                      TR, TD, TM
     -->
        <Table>
+             <caption>População das Unidades Federativas</caption>
         <thead>
         <TR>
-            <th>Estado</th>
-            <th>População</th>
+            <th scope="col">Estado</th>
+            <th scope="col" style="width: 100px;">População</th>
         </TR>
         </thead>
         <tbody>
-            <td>São Paulo</td>
-            <td>45 919 049</td>
+            <tr>
+
+               <td>São Paulo</td>
+               <td class="nume">45 919 049</td>
+            </tr>
+            <tr> 
+                <td>Minas Gerais</td>
+                <td class="nume" >21 168 791</td>
+            </tr>
+             <tr> 
+                <td>Rio de Janeirro</td>
+                <td  class="nume">17 264 943</td>
+            </tr>
+             <tr>
+
+               <td>São Paulo</td>
+               <td class="nume">45 919 049</td>
+            </tr>
+            <tr> 
+                <td>Minas Gerais</td>
+                <td class="nume" >21 168 791</td>
+            </tr>
+             <tr> 
+                <td>Rio de Janeirro</td>
+                <td  class="nume">17 264 943</td>
+            </tr>
+             <tr>
+
+               <td>São Paulo</td>
+               <td class="nume">45 919 049</td>
+            </tr>
+            <tr> 
+                <td>Minas Gerais</td>
+                <td class="nume" >21 168 791</td>
+            </tr>
+             <tr> 
+                <td>Rio de Janeirro</td>
+                <td  class="nume">17 264 943</td>
+            </tr>
+             <tr>
+
+               <td>São Paulo</td>
+               <td class="nume">45 919 049</td>
+            </tr>
+            <tr> 
+                <td>Minas Gerais</td>
+                <td class="nume" >21 168 791</td>
+            </tr>
+             <tr> 
+                <td>Rio de Janeirro</td>
+                <td  class="nume">17 264 943</td>
+            </tr>
+
+
 
        </tbody>
        <tfoot>
+        <tr>
+            <th scope="row">Total de Habitantes</th>
+            <td  class="nume"><strong>210 147 125</strong></td>
+        </tr>
         
        </tfoot>
        </Table>    

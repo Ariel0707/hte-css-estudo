@@ -19,39 +19,48 @@
             text-align: center;
             
             } 
-        th {
-            
+      th.a{
+          
+            background-color: dimgray;
+            color: #fafafa;
+        } 
+        col.n{
+            background-color: darkgoldenrod;
         }
+
     </style>
 </head>
 <body>
     <h1>Tabela de Notas</h1>
-    <table>
+    <table> 
+        <colgroup>
+            <col class="n">
+        </colgroup>
         <thead>
               <tr>
-                <th rowspan="2">Area</th>
-                <th rowspan="2">Disciplinas</th>
-                <th colspan="2">Notas</th>
-                <th rowspan="2">Media</th>
+                <th rowspan="2" scope="col" class="a">Area</th>
+                <th rowspan="2" scope="col" class="a">Disciplinas</th>
+                <th colspan="2" scope="col"class="a" >Notas</th>
+                 <th rowspan="2" scope="col" class="a">Media</th>
                 <tr>
-                <th>Nota1</th>
-                <th>Nota2</th>
+                <th scope="col"class="a" >Nota1</th>
+                <th scope="col" class="a">Nota2</th>
                 </tr>
-                <th rowspan="2">Media</th>
+            
             </tr>
         </thead>
         
             <tbody>
 
                 <tr>
-                    <th rowspan="5">Exatas</th>
+                    <th rowspan="5" >Exatas</th>
                    
                 </tr>
                 <tr>
                  <td>Matemateca</td>
                     <td>5.0</td>
                     <td>7.0</td>
-                    <td>12</td>
+                    <td >12</td>
                    
                 </tr>
                    <tr>
@@ -73,11 +82,11 @@
                     <td>Biologia</td>
                     <td>5.0</td>
                     <td>8.0</td>
-                    <td>13</td>
+                    <td >13</td>
 
                 </tr>
                 <tr>
-                    <th colspan="4">Media de Exatas</th>
+                    <th colspan="4" scope="col"class="a">Media de Exatas</th>
                     <td>49</td>
                 </tr>
                 <tr>
@@ -97,7 +106,7 @@
                 </tr>
                 
                 <tfoot>
-                    <th colspan="4">Medias de Humanas</th>
+                    <th colspan="4" scope="col"class="a">Medias de Humanas</th>
                     <td>29</td>
                 </tfoot>
             </tbody>

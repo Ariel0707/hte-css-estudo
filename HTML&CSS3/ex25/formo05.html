@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <form action="cadastro.php" method="post">
+        <fieldset>
+        <legend>Sexo</legend>
+        <p>
+            <input type="radio" name="sexo" id="masculino" value="masculino">
+            <label for="masculino">Masculino</label>
+        </p>
+        <p>
+            <input type="radio" name="sexo" id="feminino" value="feminino">
+            <label for="feminino">Feminino</label>
+        </fieldset>
+    <fieldset>
+        <legend>Espotes favoritos</legend>
+        <p>
+            <input type="checkbox" name="esporte" id="futebol" value="futebol">
+            <label for="futebol">Futebol</label>
+        </p>
+        <p>
+            <input type="checkbox" name="esporte" id="volei" value="volei">
+            <label for="volei">Volei</label>
+        </p>
+        <p>
+            <input type="checkbox" name="esporte" id="basquete" value="basquete">
+            <label for="basquete">Basquete</label>
+        </p>
+        <p>
+            <input type="checkbox" name="esporte" id="tenis" value="tenis">
+            <label for="tenis">Tenis</label>
+        </p>
+        <p>
+            <input type="checkbox" name="esporte" id="inatacao" value="Natação">
+           <label for="inatacao">Natação</label>
+        </p>
+    </fieldset>
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
+    </form>
+</body>
+</html>

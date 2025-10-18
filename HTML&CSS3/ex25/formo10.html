@@ -9,14 +9,25 @@
     <h1>Exemplo de Formulario</h1>
     <form action="cadastro.php" method="post" autocomplete="on">
         <p>
-            <label for="in1">Numero</label>
-            <input type="range" name="n1" id="in1" min="0" max="10" value="5" oninput="nvel.innerHTML = Number(in1.value)">
-            <output  id="nvel">5</output>
+           <label for="iano">Em que ano voçe nasceu?</label>
+              <input type="number" name="iano" id="iano" min="1900" max="2025" oninput="calidade()">
+        </p>
+        <p>
+            <label for="iidade">Sua idade é:</label>
+            <output id="iidade">0</output>
+           
         </p>
          <p>
             <input type="submit" value="Enviar Dados">
             <input type="reset" value="Limpar Dados">
         </p>
     </form>
+    <script>
+        function calidade(){
+            var ano = Number(iano.value)
+            var idade = 2025 - ano
+            iidade.value = idade
+        }
+    </script>
 </body>
 </html>

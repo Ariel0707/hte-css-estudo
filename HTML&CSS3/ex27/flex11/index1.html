@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .content {
+            background-color: coral;
+            display: flex;
+            flex-flow: row nowrap;
+         
+        }
+        .inter {
+            background-color: rgb(222, 242, 150);
+            border: 2px solid navy;
+              text-align: center;
+              flex-basis: 200px;
+           
+        }
+          div#i1{
+         
+            flex-grow: 0;
+        }
+        div#i2{
+            flex-grow: 2;
+        }
+        div#i3{
+            flex-grow: 1;
+        
+        }
+         div#i3{
+         
+            flex-shrink: 1;
+        }
+        div#i4{
+            flex-shrink: 0;
+        }
+        div#i5{
+            flex-shrink: 2;
+        
+        }
+      
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="inter" id="i1">A</div>
+        <div class="inter" id="i2">B</div>
+        <div class="inter" id="i3">C</div>
+      
+    </div><br>
+     <div class="content">
+        <div class="inter" id="i3">A</div>
+        <div class="inter" id="i4">B</div>
+        <div class="inter" id="i5">C</div>
+      
+    </div>
+</body>
+</html>
